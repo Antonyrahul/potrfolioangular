@@ -10,7 +10,8 @@ export class ProductService {
   constructor(private http:HttpClient) { }
   sendmessage(data):Observable<any>{
     console.log(data)
-    return this.http.post("http://localhost:4123/sendmessage",data)
+   // return this.http.post("http://localhost:4123/sendmessage",data)
+   return this.http.post("https://portfolioappantony.herokuapp.com/sendmessage",data)
   }
   getnews():Observable<any>{
     
