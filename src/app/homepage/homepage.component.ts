@@ -10,8 +10,8 @@ export class HomepageComponent implements OnInit {
 articles
   constructor(private productservice :ProductService) {
     this.productservice.getnews().subscribe((data)=>{
-      console.log(data.articles)
-      this.articles = data.articles
+      console.log(data.data.articles)
+      this.articles = data.data.articles
       //this.prod = data.data
   })
    }
