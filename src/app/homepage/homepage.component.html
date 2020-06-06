@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 mt-3">
+            <div class="card">
+                <div class="card-horizontal">
+                    <div class="img-square-wrapper">
+                        <img class="" src="https://pbs.twimg.com/profile_images/1269024804234878976/_lj-187l_400x400.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Rahul Antony</h1>
+                        <h2 class="card-title">Software Developer and Automobile Enthusiast</h2>
+                        <h3 class="card-text">A software developer with hands on experience developing android application,Windows desktop applications
+                            in the service level and Full stack development
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container maindiv">
+    <h3 class = "title">Latest Tech News</h3>
+    <br>
+    <div class = "row">
+
+<div class="col-lg-9">
+
+   
+    <div  class="row">
+
+      <div *ngFor="let details of articles; let index=index;" class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" [src]="details.urlToImage" alt=""></a>
+          <div class="card-body">
+
+            <h5>{{details.title}}</h5>
+            <p class="card-text">{{details.description}}</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Source:{{details.source["name"]}}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- /.row -->
+
+  </div>
+</div>
+</div>
