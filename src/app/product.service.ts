@@ -17,6 +17,6 @@ export class ProductService {
     
 
  // return this.http.get("http://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=0789807160f64177895a4c548e36b754")
-      return this.http.get("http://localhost:4123/getnews")
+      return this.http.get("https://portfolioappantony.herokuapp.com/getnews")
     }
 }
