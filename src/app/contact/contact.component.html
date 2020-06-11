@@ -1,4 +1,4 @@
-
+<body>
 <div id="snackbar">{{this.message}}</div>
 
     <h3 class >Contact me through social media</h3>
@@ -8,7 +8,7 @@
     <a href="mailto:antonyrahul96@gmail.com" target="_blank" class="btn btn-danger"><i class="fa fa-envelope"></i>&nbsp; Gmail</a>
 </div>
 <div class="or-seperator"><i>or</i></div>
-<div class="container contact-form">
+<!-- <div class="container contact-form">
     
     <form  [formGroup]= "messageform" (submit)="processdata();">
         <h3>Drop a Message</h3>
@@ -34,7 +34,36 @@
             </div>
         </div>
     </form>
-</div>
+</div> -->
 
+
+    <div class="blackboard">
+            <div class="form">
+                <form  [formGroup]= "messageform" (submit)="processdata();">
+                    <p>
+                            <label>Name: </label>
+                            <input type="text" formControlName="name" class="form-control" placeholder="Your Name *" value="" />
+                    </p>
+                    <p>
+                            <label>Email: </label>
+                            <input type="text" formControlName="email" class="form-control" placeholder="Your Email *" value="" />
+                    </p>
+                    <p>
+                            <label>Phone: </label>
+                            <input type="tel" formControlName="phone" class="form-control" placeholder="Your Phone Number " value="" />
+                    </p>
+
+                    <p>
+                            <label>Message: </label>
+                            <textarea formControlName="txtmsg" class="form-control" placeholder="Your Message *"></textarea>
+                    </p>
+                    <p class="wipeout">
+                            <input type="submit" value="Send Message" />
+                    </p>
+                </form>
+            </div>
+    </div>
+
+</body>
 
 

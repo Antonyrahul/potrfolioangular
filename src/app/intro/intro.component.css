@@ -12,10 +12,14 @@ section.pricing {
     height: 100%;
     margin-left: 25%;
     margin-right: 25%;
+    
     border-radius: 1rem;
     transition: all 0.2s;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
     background-color: khaki;
+    animation: fadeInAnimation ease 5s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
   }
   
   .pricing hr {
@@ -31,7 +35,14 @@ section.pricing {
   
 
   
-
+  @keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
   
 
  
