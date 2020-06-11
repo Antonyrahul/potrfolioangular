@@ -1,3 +1,4 @@
+<body>
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 mt-3">
@@ -9,7 +10,7 @@
                     <div class="card-body">
                         <h1 class="card-title">Rahul Antony</h1>
                         <h2 class="card-title">Software Developer and Automobile Enthusiast</h2>
-                        <h3 class="card-text">A software developer with hands on experience developing android application,Windows desktop applications
+                        <h3 class="card-text">A software developer with hands on experience developing Windows desktop applications
                             in the service level and Full stack development
                         </h3>
                     </div>
@@ -19,6 +20,7 @@
         </div>
     </div>
 </div>
+<br>
 <div class="container maindiv">
     <h3 class = "title">Latest Tech News</h3>
     <br>
@@ -29,8 +31,8 @@
    
     <div  class="row">
 
-      <div *ngFor="let details of articles; let index=index;" class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
+      <div *ngFor="let details of articles; let index=index;" class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card h-150">
           <a href="#"><img class="card-img-top" [src]="details.urlToImage" alt=""></a>
           <div class="card-body">
 
@@ -50,3 +52,4 @@
   </div>
 </div>
 </div>
+</body>
